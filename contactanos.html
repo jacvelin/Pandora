@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Joyas Pandora</title>
+    <link rel="stylesheet" href="contactanos.css">
+</head>
+<body>
+    <header>
+        <h1>Contáctanos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#formulario">Formulario de Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ubicacion">
+            <h2>Nuestra Ubicación</h2>
+            <p>Estamos ubicados en: Ágora Mall, 3er nivel, Avenida Abraham Lincoln, Av. John F. Kennedy, Santo Domingo</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.00027881867!2d-69.94213522576361!3d18.48364657030298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89edabd3d30f%3A0x5f9d9858d1ab7677!2zUGFuZG9yYSDigKIgw4Fnb3Jh!5e0!3m2!1ses-419!2sdo!4v1716559029411!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           
+        </section>
+        <section id="horarios">
+            <h2>Horarios de Atención</h2>
+            <p>Lunes a Viernes: 10:00 AM - 9:00 PM<br>
+            Sábado: 10:00 AM - 6:00 PM<br>
+            Domingo: Cerrado</p>
+        </section>
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Joyas Pandora</p>
+    </footer>
+</body>
+</html>
